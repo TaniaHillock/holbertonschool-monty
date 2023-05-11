@@ -73,7 +73,7 @@ void _pint(stack_t **doubly, unsigned int cline)
 	if (*doubly == NULL)
 	{
 		dprintf(2, "L%u: ", cline);
-		dprintf(2, "Pint failure the stack is empty\n");
+		dprintf(2, "can't pint, stack empty\n");
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
@@ -94,7 +94,7 @@ void _pop(stack_t **doubly, unsigned int cline)
 
 	if (doubly == NULL || *doubly == NULL)
 	{
-		dprintf(2, "L%u: pop failure the stack is empty\n", cline);
+		dprintf(2, "L%u: can't pop an empty stack\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
@@ -122,7 +122,7 @@ void _swap(stack_t **doubly, unsigned int cline)
 
 	if (m < 2)
 	{
-		dprintf(2, "L%u: swap failure,the stack is too short\n", cline);
+		dprintf(2, "L%u: can't swap, stack too short\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}

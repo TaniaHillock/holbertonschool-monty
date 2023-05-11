@@ -112,13 +112,13 @@ void _pchar(stack_t **doubly, unsigned int cline)
 {
 	if (doubly == NULL || *doubly == NULL)
 	{
-		dprintf(2, "L%u: pchar failure, the stack is empty\n", cline);
+		dprintf(2, "L%u: can't pchar, stack empty\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
 	if ((*doubly)->n < 0 || (*doubly)->n >= 128)
 	{
-		dprintf(2, "L%u: pchar failure, the value is out of range\n", cline);
+		dprintf(2, "L%u: can't pchar, stack empty\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
