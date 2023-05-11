@@ -3,7 +3,7 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 
 Monty byte code files
 
-Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:The monty program
+Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:The monty program.
 
 Usage: monty file
 
@@ -35,7 +35,7 @@ mul 	multiplies the second top element of the stack with the top element of the 
 
 mod 	computes the rest of the division of the second top element of the stack by the top element of the stack.
 
-#	when the first non-space character of a line is #, treat this line as a comment.
+'#'	when the first non-space character of a line is #, treat this line as a comment.
 
 pchar 	prints the char at the top of the stack, followed by a new line.
 
